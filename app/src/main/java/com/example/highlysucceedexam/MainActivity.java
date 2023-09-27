@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //changing status bar color
         changeStatusBarColor();
 
         llNetworkError = findViewById(R.id.ll_network_error);
