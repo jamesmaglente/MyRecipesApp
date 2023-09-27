@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:id="@+id/random_recipe_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/iv_food"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/tv_recipe_name"
+                    android:text="Recipe Name"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_likes"
+                        android:textSize="16sp"
+                        android:padding="3dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:padding="2dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Php 120.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="2dp"
+                    android:textColor="@color/hintColor"
+                    android:id="@+id/tv_description"
+                    android:gravity="center_vertical"
+                    android:text="Description"
+                    android:textStyle="italic"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
